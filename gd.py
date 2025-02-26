@@ -26,8 +26,8 @@ file_url = 'https://drive.google.com/uc?id=1xPzABbOoQTFFo7mz41zs2GdqOIoWawKr'
 output = 'model_clean.pkl'  # Change the file name and extension as needed
 gdown.download(file_url, output, quiet=False)
 
-with open(output, 'rb') as file:
-        model = pickle.load(file)
+#with open(output, 'rb') as file:
+        #data = pickle.load(file)
 #st.write(data)
 
 
@@ -40,6 +40,8 @@ with open(output, 'rb') as file:
 
 # Load the uploaded model
 #model = joblib.load(data)
+with open(output, 'rb') as file:
+        model = joblib.load(file)
 #st.success("Model loaded successfully!")
 
 # Dropdown for inputs
