@@ -28,7 +28,8 @@ gdown.download(file_url, output, quiet=False)
 
 with open(output, 'rb') as file:
         data = pickle.load(file)
-st.write(data)
+        model = joblib.load(file)
+#st.write(data)
 
 
 # Input for Google Drive file URL
@@ -39,7 +40,7 @@ st.write(data)
 
 
 # Load the uploaded model
-model = joblib.load(data)
+#model = joblib.load(data)
 #st.success("Model loaded successfully!")
 
 # Dropdown for inputs
