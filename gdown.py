@@ -24,7 +24,7 @@ file_url = 'https://drive.google.com/uc?id=1xPzABbOoQTFFo7mz41zs2GdqOIoWawKr'
 
 # Download the file using gdown
 output = 'model_clean.pkl'  # Change the file name and extension as needed
-#gdown.download(file_url, output, quiet=False)
+gdown.download(file_url, output, quiet=False)
 
 with open(output, 'rb') as file:
         data = pickle.load(file)
@@ -39,7 +39,7 @@ st.write(data)
 
 
 # Load the uploaded model
-model = joblib.load(data)
+#model = joblib.load(data)
 #st.success("Model loaded successfully!")
 
 # Dropdown for inputs
@@ -63,7 +63,7 @@ if st.button('Predict Fantasy Score'):
         input_data_encoded = input_data_encoded.reindex(columns=model.feature_names_in_, fill_value=0)
 
         # Make prediction
-        predicted_score = model.predict(input_data_encoded)
+        predicted_score = data.predict(input_data_encoded)
 
         # Display the predicted score
         st.write(f"Predicted Fantasy Score for {player_name}: {predicted_score[0]}")
