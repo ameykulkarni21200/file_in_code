@@ -24,7 +24,7 @@ file_url = 'https://drive.google.com/uc?id=1xPzABbOoQTFFo7mz41zs2GdqOIoWawKr'
 
 # Download the file using gdown
 output = 'model_clean.pkl'  # Change the file name and extension as needed
-gdown.download(file_url, output, quiet=False)
+#gdown.download(file_url, output, quiet=False)
 
 with open(output, 'rb') as file:
         data = pickle.load(file)
