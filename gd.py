@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-#import joblib
+import joblib
 
 # Load your dataset
 df = pd.read_csv('fantasy_scores_clean.csv')
@@ -39,7 +39,7 @@ st.write(data)
 
 
 # Load the uploaded model
-#model = joblib.load(data)
+model = joblib.load(data)
 #st.success("Model loaded successfully!")
 
 # Dropdown for inputs
