@@ -47,9 +47,7 @@ nbformat==5.10.4
 numpy==2.1.0
 overrides==7.7.0
 packaging==24.1
-pandas==2.2.2
 pandocfilters==1.5.1
-pillow==10.4.0
 platformdirs==4.2.2
 prometheus_client==0.20.0
 pycparser==2.22
@@ -65,7 +63,6 @@ requests==2.32.3
 rfc3339-validator==0.1.4
 rfc3986-validator==0.1.1
 rpds-py==0.20.0
-scikit-learn==1.5.1
 scipy==1.14.1
 Send2Trash==1.8.3
 six==1.16.0
@@ -90,3 +87,17 @@ google-auth
 google-auth-oauthlib
 google-auth-httplib2
 google-api-python-client
+
+
+
+
+
+streamlit
+gdown
+pandas
+
+
+pillow
+python-docx
+
+scikit-learn
