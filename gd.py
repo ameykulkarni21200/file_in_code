@@ -27,8 +27,7 @@ output = 'model_clean.pkl'  # Change the file name and extension as needed
 gdown.download(file_url, output, quiet=False)
 
 with open(output, 'rb') as file:
-        data = pickle.load(file)
-        model = joblib.load(file)
+        model = pickle.load(file)
 #st.write(data)
 
 
