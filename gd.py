@@ -65,7 +65,7 @@ if st.button('Predict Fantasy Score'):
         input_data_encoded = input_data_encoded.reindex(columns=model.feature_names_in_, fill_value=0)
 
         # Make prediction
-        predicted_score = data.predict(input_data_encoded)
+        predicted_score = model.predict(input_data_encoded)
 
         # Display the predicted score
         st.write(f"Predicted Fantasy Score for {player_name}: {predicted_score[0]}")
