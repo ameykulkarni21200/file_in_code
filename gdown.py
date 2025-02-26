@@ -19,6 +19,8 @@ import pickle
 
 
 # Function to download and display file
+file_url = 'https://drive.google.com/uc?id=1xPzABbOoQTFFo7mz41zs2GdqOIoWawKr'
+
 
 # Download the file using gdown
 output = 'model_clean.pkl'  # Change the file name and extension as needed
@@ -30,7 +32,7 @@ st.write(data)
 
 
 # Input for Google Drive file URL
-file_url = 'https://drive.google.com/uc?id=1xPzABbOoQTFFo7mz41zs2GdqOIoWawKr'
+
 
 
 #https://drive.google.com/file/d/1xPzABbOoQTFFo7mz41zs2GdqOIoWawKr/view?usp=drive_link
