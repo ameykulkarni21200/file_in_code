@@ -11,7 +11,7 @@ st.title("Fantasy Score Predictor")
 # File uploader widget for the model
 #uploaded_model = st.file_uploader("Choose a .pkl model file", type="pkl")
 import streamlit as st
-#import gdown
+import gdown
 import pandas as pd
 from docx import Document
 import pickle
