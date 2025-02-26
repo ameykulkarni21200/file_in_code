@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 #import joblib
-
+!pip install gdown
 # Load your dataset
 df = pd.read_csv('fantasy_scores_clean.csv')
 
