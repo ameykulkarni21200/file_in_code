@@ -70,19 +70,3 @@ if st.button('Predict Fantasy Score'):
         # Display the predicted score
         st.write(f"Predicted Fantasy Score for {player_name}: {predicted_score[0]}")
 
-# Options Route
-st.sidebar.title("Options")
-st.sidebar.write("Unique Options from the Dataset:")
-
-st.sidebar.write("**Venues:**")
-st.sidebar.write(df['venue'].unique().tolist())
-
-st.sidebar.write("**Player Names:**")
-st.sidebar.write(df['player_name'].unique().tolist())
-
-st.sidebar.write("**Opposition Team:**")
-st.sidebar.write(df['opposition_team'].unique().tolist())
-
-st.sidebar.write("**Player Team First Role:**")
-st.sidebar.write(df['player_team_first_role'].unique().tolist())
-
